@@ -70,7 +70,9 @@ p {
 .no-margin {
   margin: 0px;
 }
-
+.bg-dark{
+  background-color: #14863d!important;
+}
 .hid {
   display: none;
 }
@@ -711,7 +713,7 @@ right: 0;
 
 footer {
   padding: 80px 50px;
-  background-color: #222;
+  background-color: #14863d;
   color: #FFF;
 }
 
@@ -854,3 +856,132 @@ footer .tags ul li {
 /* Contact Page */
 
 li,ul{list-style:none;padding:0;margin:0}.sec-title{position:relative;padding-bottom:40px}.sec-title .title{position:relative;color:#14863d;font-size:18px;font-weight:700;padding-right:50px;margin-bottom:15px;display:inline-block;text-transform:capitalize}.sec-title .title:before{position:absolute;content:'';right:0;bottom:7px;width:40px;height:1px;background-color:#bbb}.sec-title h2{position:relative;color:#252525;font-size:36px;font-weight:700;line-height:1.5em;display:block}.sec-title.light h2{color:#fff}.contact-page-section{position:relative;padding-top:110px; padding-bottom: 110px;}.contact-page-section .inner-container{position:relative;z-index:1;background-color:#14863d;box-shadow:0 0 15px 5px rgba(0,0,0,.1)}.contact-page-section .form-column{position:relative;padding:0 0 0 15px}.contact-page-section .form-column .inner-column{position:relative;padding:60px 45px 30px;background-color:#fff}.contact-page-section .info-column{position:relative}.contact-page-section .info-column .inner-column{position:relative;padding:60px 35px}.contact-page-section .info-column h2{position:relative;color:#fff;font-size:30px;font-weight:700;line-height:1.4em;margin-bottom:45px}.contact-page-section .info-column .list-info{position:relative;margin-bottom:60px}.contact-page-section .info-column .list-info li{position:relative;margin-bottom:25px;font-size:18px;color:#fff;line-height:1.8em;padding-left:45px}.contact-page-section .info-column .list-info li:last-child{margin-bottom:0}.contact-page-section .info-column .list-info li i{position:absolute;left:0;top:8px;color:#fff;font-size:30px}.contact-form{position:relative}.contact-form .form-group{position:relative;margin-bottom:20px}.contact-form input[type=text],.contact-form input[type=email],.contact-form textarea{position:relative;display:block;width:100%;height:60px;color:#222;font-size:14px;line-height:38px;padding:10px 30px;border:1px solid #ddd;background-color:#fff;transition:all .3s ease;-ms-transition:all .3s ease;-webkit-transition:all .3s ease}.contact-form input[type=text]:focus,.contact-form input[type=email]:focus,.contact-form textarea:focus{border-color:#14863d}.contact-form textarea{height:250px;resize:none}.contact-form .theme-btn{font-size:16px;font-weight:700;margin-top:10px;text-transform:capitalize;padding:16px 39px;border:2px solid #14863d;font-family:Arimo,sans-serif;background:#14863d;display:inline-block;position:relative;line-height:24px;cursor:pointer;color:#fff}.contact-form .theme-btn:hover{color:#14863d;border-color:#14863d;background:0 0}.contact-form input.error,.contact-form select.error,.contact-form textarea.error{border-color:red!important}.contact-form label.error{display:block;line-height:24px;padding:5px 0 0;margin:0;text-transform:uppercase;font-size:12px;color:red;font-weight:500}.social-icon-four{position:relative}.social-icon-four li{position:relative;margin-right:18px;display:inline-block}.social-icon-four li.follow{color:#fff;font-weight:600;font-size:24px;display:block;margin-bottom:20px}.social-icon-four li a{position:relative;font-size:20px;color:#fff;-webkit-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease}.social-icon-four li a:hover{color:#222}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap");
+
+
+.subscribe-container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0; 
+  right: 0; 
+  top: 0;  
+  bottom: 0;
+  margin: auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  z-index: 1200;
+}
+.subscribe-container.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe {
+  display: flex;
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+.subscribe .close {
+  cursor: pointer;
+  position: absolute;
+  font-size: 3rem;
+  top: -20px;
+  right: -20px;
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.subscribe .close:hover {
+  color: #f00;
+}
+
+.subscribe .img {
+  min-width: 260px;
+  background: #14863d;
+  background: -webkit-linear-gradient(to right bottom, #1abd56, #14863d);
+  background: linear-gradient(to right bottom,#1abd56, #14863d);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.subscribe .img img {
+  width: 90%;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+  animation: animate_subs_img 1s alternate infinite linear;
+}
+
+.subscribe .content {
+  padding: 2.5rem 1.5rem;
+}
+.subscribe .content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.subscribe .content p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.35;
+  color: #555;
+}
+
+.subscribe .content form * {
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 0.6rem;
+  padding: 0.7rem 0.5rem;
+  font-family: "Maven Pro", sans-serif;
+  border-radius: 5px;
+  outline: none;
+}
+.subscribe .content form input {
+  border: 1px solid #f2f2f2;
+}
+.subscribe .content form button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  box-shadow: 0 5px 15px -6px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right, #1abd56, #14863d);
+  transition: box-shadow 0.25s linear;
+}
+.subscribe .content form button:hover {
+  box-shadow: none;
+}
+
+@keyframes animate_subs_img {
+  to {
+    filter: drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .subscribe {
+    display: block;
+    max-width: 350px;
+  }
+  .subscribe .img {
+    min-width: auto;
+    border-radius: 10px 10px 0 0;
+  }
+}
