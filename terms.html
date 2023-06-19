@@ -17,7 +17,7 @@
 </head>
 <body>
     
-    <header class="contianer-fluid navigation">
+    <header class="contianer-fluid ">
         <div class="header-top">
             <div class="container">
                  <div class="row">
@@ -27,8 +27,8 @@
                              <li>Email : Contact@xyvmd.com</li>
                          </ul>
                      </div>
-                     <div class="col-md-4 logo">
-                         <img src="assets/images/logo.png" alt="">
+                     <div class="col-md-4 logo navigation">
+                        <img src="img/logo.png" alt="">
                          <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-jk" href="#menu-jk"><i class="fas d-block d-sm-block d-md-none small-menu fa-bars"></i></a>
                      </div>
                      <div class="col-md-4 d-none d-md-block social-link ">
@@ -50,13 +50,23 @@
                  </div>
              </div>
         </div>
-        <div id="menu-jk" class="header-nav d-none d-md-block">
+        <div id="menu-jk" class="header-nav navigation d-none d-md-block">
             <div class="container">
                 <div class="row nav-row">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="destinations.html">Destinations</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="spain.html">Spain</a></li>
+                                <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+                                <li><a class="dropdown-item" href="dubai.html">Dubai</a></li>
+                                <li><a class="dropdown-item" href="newyork.html">New York</a></li>
+                                <li><a class="dropdown-item" href="italy.html">Italy</a></li>
+                                <li><a class="dropdown-item" href="london.html">London</a></li>
+                              </ul>
+                        
+                        </li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
